@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="btns">
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="front">Front</li>
+            <li class="list" data-filter="back">Backend</li>
+            <li class="list" data-filter="arduino">arduino</li>
+        </ul>
+    </header>
+    <div class="container">
+        <div  class="card" style="--clr: #009688;" data-imagem="front">
+            <div class="imgBx"></div>
+            <div class="content"></div>
+        </div>
+        <div class="card" style="--clr: #ff3e7f;" data-imagem="back">
+            <div class="imgBx"></div>
+            <div class="content"></div>
+        </div>
+        <div class="card" style="--clr: #03a9f4;" data-imagem="arduino">
+            <div class="imgBx"></div>
+            <div class="content"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
