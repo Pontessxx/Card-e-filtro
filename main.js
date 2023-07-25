@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     itemBoxes.forEach(itemBox => { //para cada item da lista pega o valor da data-imagem
       const dataImagem = itemBox.getAttribute('data-imagem');
       if (filter === 'all' || filter === dataImagem) {
-        itemBox.style.display = 'block';
+        itemBox.style.display = ''; //tirei o block para não quebrar meu codigo css
       } else {
         itemBox.style.display = 'none';
       }

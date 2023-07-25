@@ -51,6 +51,9 @@ ul li.active{
 }
 .container .card{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 350px;
     height: 300px;
     background: #fff;
@@ -60,4 +63,18 @@ ul li.active{
 }
 .container .card:hover{
     height: 400px;
+}
+.container .card .imgBx{
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.container .card:hover .imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
